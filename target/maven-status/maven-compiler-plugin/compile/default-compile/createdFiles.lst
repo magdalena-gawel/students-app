@@ -1,0 +1,8 @@
+pl/students/app/Grade.class
+pl/students/app/StudentIncorrectEquals.class
+pl/students/immutable/ImmutableGrade.class
+pl/students/immutable/Students.class
+pl/students/app/StudentIncorrectEqualsAndHash.class
+pl/students/app/Students.class
+pl/students/app/Student.class
+pl/students/immutable/ImmutableStudent.class
