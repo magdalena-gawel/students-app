@@ -65,17 +65,6 @@ public class Student {
      * @return double
      */
     public double calculateAverageGrade() {
-        double sum = 0.0;
-        if (!grades.isEmpty()) { //this.grades is not needed
-            for (Grade grade : grades) {
-                sum += grade.getValue();
-            }
-            return sum / grades.size();
-        }
-        return 0.0;
-    }
-
-    public double calculateAverageGradeStream() {
         return grades.stream().collect(Collectors.averagingDouble(Grade::getValue));
     }
 

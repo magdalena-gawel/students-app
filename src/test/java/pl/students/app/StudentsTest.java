@@ -49,9 +49,9 @@ public class StudentsTest {
 
     @Test
     public void testGetStudentsWithNameStartingWith() {
-        ArrayList result = all.getStudentsWithNameStartingWith("A");
+        List result = all.getStudentsWithNameStartingWith('A');
 
-        ArrayList<Student> expected = new ArrayList<Student>();
+        List<Student> expected = new ArrayList<Student>();
         expected.add(adam);
         expected.add(agnieszka);
 
@@ -72,9 +72,9 @@ public class StudentsTest {
 
     @Test
     public void testSortByGrade() {
-        ArrayList result = all.sortByGrade();
+        List result = all.sortByGrade();
 
-        ArrayList<Student> expected = new ArrayList<Student>();
+        List<Student> expected = new ArrayList<Student>();
         expected.add(adam);
         expected.add(jakub);
         expected.add(agnieszka);

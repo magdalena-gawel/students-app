@@ -2,6 +2,8 @@ package pl.students.app;
 
 import java.util.*;
 
+import static java.util.stream.Collectors.toList;
+
 class Students {
 
     ArrayList<Student> students = new ArrayList<Student>();
@@ -23,32 +25,40 @@ class Students {
     /**
      * Sort list of students by average grade, ascending
      *
-     * @return ArrayList<Student>
+     * @return List<Student>
      */
-    public ArrayList<Student> sortByGrade() {
-        //TODO: use streams instead
-        Collections.sort(students, (a, b) -> a.calculateAverageGrade() < b.calculateAverageGrade() ? -1 : a.calculateAverageGrade() == b.calculateAverageGrade() ? 0 : 1);
-        return students;
+    public List<Student> sortByGrade() {
+        Comparator<Student> byGrade = Comparator.comparingDouble(Student::calculateAverageGrade);
+        return students.stream()
+                .sorted(byGrade)
+                .collect(toList());
+
+//        Collections.sort(students, (a, b) -> a.calculateAverageGrade() < b.calculateAverageGrade() ? -1 : a.calculateAverageGrade() == b.calculateAverageGrade() ? 0 : 1);
+//        return students;
     }
+
 
     /**
      * Return list of students with name starting with letter passed as param
      *
      * @param letter
-     * @return ArrayList<Student>
+     * @return List<Student>
      */
-    public ArrayList<Student> getStudentsWithNameStartingWith(String letter) {
-        if (letter.length() != 1) {
-            throw new IllegalArgumentException("Only one letter allowed.");
+    public List<Student> getStudentsWithNameStartingWith(Character letter) {
+        if (letter == null) {
+            throw new IllegalArgumentException("Argument cannot be null");
         }
-        //TODO: use streams instead
-        ArrayList<Student> found = new ArrayList<Student>();
-        for (Student student : students) {
-            if (student.getName().startsWith(letter.toUpperCase())) {
-                found.add(student);
-            }
-        }
-        return found;
+        return students.stream()
+                .filter(t -> t.getName().startsWith(letter.toString().toUpperCase()))
+                .collect(toList());
+
+//        ArrayList<Student> found = new ArrayList<Student>();
+//        for (Student student : students) {
+//            if (student.getName().startsWith(letter.toUpperCase())) {
+//                found.add(student);
+//            }
+//        }
+//        return found;
     }
 
     /**
@@ -60,7 +70,7 @@ class Students {
      */
     public ArrayList<Student> getStudentsWithSurnameNotEndedWith(Character letter) { //Character = 1 letter
         if (letter == null) {
-            throw new IllegalArgumentException("Only one letter allowed.");
+            throw new IllegalArgumentException("Argument cannot be null");
         }
         //TODO: use streams instead
         ListIterator<Student> iter = students.listIterator();
