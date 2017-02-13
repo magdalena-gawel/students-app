@@ -1,13 +1,13 @@
 package pl.students.app;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 class Grade {
     private Double value;
-    private Date announced;
+    private LocalDateTime announced;
 
-    public Grade(Double value, Date announced) {
+    public Grade(Double value, LocalDateTime announced) {
         this.value = value;
         this.announced = announced;
     }
@@ -20,7 +20,7 @@ class Grade {
         return value;
     }
 
-    public Date getAnnounced() {
+    public LocalDateTime getAnnounced() {
         return announced;
     }
 

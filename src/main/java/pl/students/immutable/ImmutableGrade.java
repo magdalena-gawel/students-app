@@ -1,14 +1,14 @@
 package pl.students.immutable;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public final class ImmutableGrade {
     private final Double value;
-    private final Date announced;
+    private final LocalDateTime announced;
 
-    public ImmutableGrade(Double value, Date announced) {
+    public ImmutableGrade(Double value, LocalDateTime announced) {
         this.value = new Double(value.doubleValue());
-        this.announced = new Date(announced.getTime());
+        this.announced = LocalDateTime.of(announced.getYear(), announced.getMonth(), announced.getDayOfMonth(), announced.getHour(), announced.getMinute(), announced.getSecond());
     }
 
     public String toString() {
@@ -19,7 +19,7 @@ public final class ImmutableGrade {
         return value;
     }
 
-    public Date getAnnounced() {
-        return new Date(announced.getTime());
+    public LocalDateTime getAnnounced() {
+        return LocalDateTime.of(announced.getYear(), announced.getMonth(), announced.getDayOfMonth(), announced.getHour(), announced.getMinute(), announced.getSecond());
     }
 }

@@ -4,9 +4,9 @@ import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -24,19 +24,21 @@ public class StudentsTest {
         adam = new Student("Adam", "Nowakowski");
         agnieszka = new Student("Agnieszka", "Noc");
 
+        LocalDateTime now = LocalDateTime.now();
+
         jakub.setGrades(
                 new ArrayList<Grade>(
-                        Arrays.asList(new Grade(2.0, new Date()), new Grade(4.0, new Date()))
+                        Arrays.asList(new Grade(2.0, now), new Grade(4.0, now))
                 )
         );
         adam.setGrades(
                 new ArrayList<Grade>(
-                        Arrays.asList(new Grade(2.0, new Date()))
+                        Arrays.asList(new Grade(2.0, now))
                 )
         );
         agnieszka.setGrades(
                 new ArrayList<Grade>(
-                        Arrays.asList(new Grade(6.0, new Date()), new Grade(5.0, new Date()))
+                        Arrays.asList(new Grade(6.0, now), new Grade(5.0, now))
                 )
         );
         all = new Students();

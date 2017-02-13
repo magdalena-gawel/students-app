@@ -2,24 +2,21 @@ package pl.students.app;
 
 import junit.framework.TestCase;
 
+import java.time.LocalDateTime;
+import java.time.Month;
 import java.util.*;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+
+import static org.hamcrest.CoreMatchers.not;
+import static org.junit.Assert.assertThat;
 
 public class StudentTest extends TestCase {
 
-    /**
-     * TODO: change date to LocalDateTime
-     */
     private Student jakub;
-    private Date date_9Jan, date_10Jan;
+    private LocalDateTime date_9Jan, date_10Jan;
 
     protected void setUp() {
-        Calendar cal = Calendar.getInstance();
-        cal.set(2017, Calendar.JANUARY, 9);
-        date_9Jan = cal.getTime();
-        cal.set(2017, Calendar.JANUARY, 10);
-        date_10Jan = cal.getTime();
+        date_9Jan = LocalDateTime.of(2017, Month.JANUARY, 9, 10, 0, 0);
+        date_10Jan = LocalDateTime.of(2017, Month.JANUARY, 10, 10, 0, 0);
 
         jakub = new Student("Jakub", "Tokarczyk");
         jakub.setGrades(
@@ -29,29 +26,26 @@ public class StudentTest extends TestCase {
         );
     }
 
-    public void testMutableGradeDate() {
-        ArrayList<Grade> before = new ArrayList<Grade>();
-        for(Grade temp: jakub.getGrades()){
-            Grade newgrade = new Grade(temp.getValue(), new Date(temp.getAnnounced().getTime()));
-            before.add(newgrade);
-        }
-        date_9Jan.setMonth(date_9Jan.getMonth() + 1); //deprecated, ale gdy uzywam Calendar, nie widac problemu z mutability
-        List after = jakub.getGrades();
+    public void testMutableName() {
+        String before = jakub.getName();
+        jakub.setName("Kuba");
+        String after = jakub.getName();
         assertThat(before, not(after));
     }
 
-    /**
-     * To tez nie jest test, podobnie jak wyzej
-     */
     public void testMutableGrades() {
-        System.out.println("========= Mutable grades: =========");
-        System.out.println(jakub.getGrades());
+        List<Grade> before = new ArrayList<Grade>();
+        for (Grade temp : jakub.getGrades()) {
+            Grade newgrade = new Grade(temp.getValue(), temp.getAnnounced());
+            before.add(newgrade);
+        }
         jakub.setGrades(
                 new ArrayList<Grade>(
                         Arrays.asList(new Grade(4.0, date_10Jan), new Grade(5.0, date_10Jan))
                 )
         );
-        System.out.println(jakub.getGrades());
+        List<Grade> after = jakub.getGrades();
+        assertThat(before, not(after));
     }
 
     public void testEquals() {
@@ -59,7 +53,7 @@ public class StudentTest extends TestCase {
         Student u2 = new Student("Przemek", "Gawel");
         assertTrue(u1.equals(u2));
 
-        Date date = new Date();
+        LocalDateTime date = LocalDateTime.now();
         Grade g1 = new Grade(9.0, date);
         Grade g2 = new Grade(9.0, date);
         assertTrue(g1.equals(g2));
