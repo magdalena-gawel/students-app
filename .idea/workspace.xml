@@ -12,7 +12,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentIncorrectEqualsAndHashTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentIncorrectEqualsAndHashTest.xml" />
@@ -63,29 +62,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Students.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Students.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="51" column="70" lean-forward="false" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+            <state relative-caret-position="459">
+              <caret line="79" column="63" lean-forward="true" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#163#172#0" expanded="true" />
-                <marker date="1487014146000" expanded="false" signature="1664:1673" ph="&lt;~&gt;" />
+                <element signature="e#158#167#0" expanded="true" />
+                <marker date="1487015277000" expanded="false" signature="1654:1663" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1928#1937#0" expanded="true" />
-                <element signature="e#2180#2189#0" expanded="true" />
+                <element signature="e#1565#1574#0" expanded="true" />
+                <element signature="e#1924#1933#0" expanded="true" />
+                <element signature="e#2176#2185#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
       </list>
     </option>
   </component>
@@ -658,9 +658,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1565#1574#0" expanded="false" />
-            <element signature="e#1928#1937#0" expanded="true" />
-            <element signature="e#2180#2189#0" expanded="true" />
+            <element signature="e#1565#1574#0" expanded="true" />
+            <element signature="e#1924#1933#0" expanded="true" />
+            <element signature="e#2176#2185#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,26 +1000,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="51" column="70" lean-forward="false" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        <state relative-caret-position="207">
+          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#163#172#0" expanded="true" />
-            <marker date="1487014146000" expanded="false" signature="1664:1673" ph="&lt;~&gt;" />
+            <element signature="e#1565#1574#0" expanded="true" />
+            <element signature="e#1924#1933#0" expanded="true" />
+            <element signature="e#2176#2185#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="79" column="63" lean-forward="true" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1928#1937#0" expanded="true" />
-            <element signature="e#2180#2189#0" expanded="true" />
+            <element signature="e#158#167#0" expanded="true" />
+            <marker date="1487015277000" expanded="false" signature="1654:1663" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

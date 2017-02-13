@@ -61,7 +61,7 @@ public class StudentsTest {
     //use annotations instead of extending TestCase class
     @Test
     public void testRemoveStudentsWithSurnameEndedWith() {
-        List result = all.getStudentsWithSurnameNotEndedWith('c');
+        List result = all.getStudentsWithSurnameNotEnded('c');
 
         List<Student> expected = new ArrayList<Student>();
         expected.add(jakub);

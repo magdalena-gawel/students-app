@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.toList;
 
 class Students {
 
-    ArrayList<Student> students = new ArrayList<Student>();
+    List<Student> students = new ArrayList<Student>();
 
     public static <T> boolean listEqualsNoOrder(List<Grade> l1, List<Grade> l2) {
         final Set<Grade> s1 = new HashSet<>(l1);
@@ -18,7 +18,7 @@ class Students {
         students.add(student);
     }
 
-    public ArrayList<Student> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
@@ -66,21 +66,25 @@ class Students {
      * from the list
      *
      * @param letter
-     * @return ArrayList<Student>
+     * @return List<Student>
      */
-    public ArrayList<Student> getStudentsWithSurnameNotEndedWith(Character letter) { //Character = 1 letter
+    public List<Student> getStudentsWithSurnameNotEnded(Character letter) {
         if (letter == null) {
             throw new IllegalArgumentException("Argument cannot be null");
         }
-        //TODO: use streams instead
-        ListIterator<Student> iter = students.listIterator();
-        while (iter.hasNext()) {
-            Student current = iter.next();
-            if (current.getSurname().toLowerCase().endsWith(letter.toString().toLowerCase())) {
-                iter.remove();
-            }
-        }
-        return students;
+        return students.stream()
+                .filter(t -> !t.getSurname().toLowerCase().endsWith(letter.toString().toLowerCase()))
+                .collect(toList());
+
+//        //TODO: use streams instead
+//        ListIterator<Student> iter = students.listIterator();
+//        while (iter.hasNext()) {
+//            Student current = iter.next();
+//            if (current.getSurname().toLowerCase().endsWith(letter.toString().toLowerCase())) {
+//                iter.remove();
+//            }
+//        }
+//        return students;
     }
 
 }
