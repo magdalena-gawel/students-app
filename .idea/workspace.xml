@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5fb8e0-acee-43a5-bfa5-860d33c96105" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/app/Grade.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/app/Grade.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/app/Student.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/app/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/app/StudentIncorrectEquals.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/app/StudentIncorrectEquals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/app/StudentIncorrectEqualsAndHash.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/app/StudentIncorrectEqualsAndHash.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/app/Students.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/app/Students.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/immutable/ImmutableGrade.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/immutable/ImmutableGrade.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/pl/students/immutable/ImmutableStudent.class" afterPath="$PROJECT_DIR$/target/classes/pl/students/immutable/ImmutableStudent.class" />
@@ -13,14 +16,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsAndHashTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsAndHashTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentsTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentsTest.xml" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="StudentTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-573">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="150">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#892#899#0" expanded="true" />
@@ -57,58 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImmutableStudent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImmutableStudentTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-573">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentIncorrectEqualsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-              <folding>
-                <element signature="e#1043#1067#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StudentsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+            <state relative-caret-position="195">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1914#1923#0" expanded="true" />
@@ -117,12 +67,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Students.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java">
+      <file leaf-file-name="StudentIncorrectEqualsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="420">
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <element signature="e#1043#1067#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImmutableStudentTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+              <folding>
+                <element signature="e#597#613#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,21 +104,52 @@
       <file leaf-file-name="ImmutableGrade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="90">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding>
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Students.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+            <state relative-caret-position="960">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentIncorrectEquals.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEquals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentIncorrectEqualsAndHash.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEqualsAndHash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -205,16 +200,16 @@
         <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEquals.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEqualsAndHash.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsAndHashTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Student.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
       </list>
     </option>
   </component>
@@ -929,30 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEqualsAndHash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableStudent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -972,31 +943,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#892#899#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="73">
+          <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="149">
+          <caret line="591" column="33" lean-forward="true" selection-start-line="591" selection-start-column="33" selection-end-line="591" selection-end-column="33" />
+          <folding>
+            <element signature="e#23368#23369#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="960">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/StudentIncorrectEqualsAndHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Grade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#1043#1067#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1009,43 +1023,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/immutable/ImmutableGrade.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/immutable/ImmutableStudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="240">
+          <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
           <folding>
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#597#613#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentIncorrectEqualsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
-            <element signature="e#1043#1067#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#892#899#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+        <state relative-caret-position="195">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1914#1923#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/students/app/Students.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

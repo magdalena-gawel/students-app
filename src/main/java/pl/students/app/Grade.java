@@ -4,10 +4,10 @@ import java.util.Date;
 import java.util.Objects;
 
 class Grade {
-    private double value;
+    private Double value;
     private Date announced;
 
-    Grade(double value, Date announced) {
+    public Grade(Double value, Date announced) {
         this.value = value;
         this.announced = announced;
     }
@@ -16,7 +16,7 @@ class Grade {
         return announced.toString();
     } //stupid implementation, but enough for now
 
-    public double getValue() {
+    public Double getValue() {
         return value;
     }
 
@@ -33,7 +33,7 @@ class Grade {
         }
         Grade grade = (Grade) o;
 
-        return value == grade.value &&
+        return Objects.equals(value, grade.value) &&
                 Objects.equals(announced, grade.announced);
     }
 

@@ -3,11 +3,11 @@ package pl.students.immutable;
 import java.util.Date;
 
 public final class ImmutableGrade {
-    private final double value;
+    private final Double value;
     private final Date announced;
 
-    public ImmutableGrade(double value, Date announced) {
-        this.value = value;
+    public ImmutableGrade(Double value, Date announced) {
+        this.value = new Double(value.doubleValue());
         this.announced = new Date(announced.getTime());
     }
 
