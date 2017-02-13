@@ -23,6 +23,9 @@ class Students {
      * @return ArrayList<ImmutableStudent>
      */
     public ArrayList<ImmutableStudent> sortByGrade() {
+        /**
+         * TODO: use stream
+         */
         Collections.sort(students, (a, b) -> a.calculateAverageGrade() < b.calculateAverageGrade() ? -1 : a.calculateAverageGrade() == b.calculateAverageGrade() ? 0 : 1);
         return students;
     }

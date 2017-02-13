@@ -1,23 +1,26 @@
 package pl.students.app;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class Student {
-    private String name; //pytanie: nie do konca czuje czy powinnam uzyc primitywow a odpowiadajacych im obiektow (string, String)
+    private String name;
     private String surname;
-    private ArrayList<Grade> grades = new ArrayList<Grade>(); //pytanie: czy taki zapis jest OK, czy lepiej wstawic np. do konstruktora?
+    private List<Grade> grades;
 
     Student(String name, String surname) {
         this.name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
         this.surname = surname.substring(0, 1).toUpperCase() + surname.substring(1).toLowerCase();
+        grades = new ArrayList<Grade>();
     }
 
-    public ArrayList<Grade> getGrades() {
+    public List<Grade> getGrades() {
         return grades;
     }
 
-    public void setGrades(ArrayList<Grade> grades) {
+    public void setGrades(List<Grade> grades) {
         this.grades = grades;
     }
 
@@ -59,14 +62,21 @@ public class Student {
      */
     public double calculateAverageGrade() {
         double sum = 0.0;
-        if (!this.grades.isEmpty()) {
-            for (Grade grade : this.grades) {
+        if (!grades.isEmpty()) { //this.grades is not needed
+            for (Grade grade : grades) {
                 sum += grade.getValue();
             }
-            return sum / this.grades.size();
+            return sum / grades.size();
         }
-        return 0.0; //pytanie: czy nie lepiej tu zwrocic null(jak?) albo exception?
+        return 0.0;
     }
 
+    public double calculateAverageGradeStream() {
+        return grades.stream().collect(Collectors.averagingDouble(Grade::getValue));
+    }
+
+    /**
+     * TODO: write my own collector to calculate average grade
+     */
 
 }

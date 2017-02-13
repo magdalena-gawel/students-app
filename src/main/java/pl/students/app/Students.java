@@ -6,7 +6,7 @@ class Students {
 
     ArrayList<Student> students = new ArrayList<Student>();
 
-    public static <T> boolean listEqualsNoOrder(ArrayList<Grade> l1, ArrayList<Grade> l2) {
+    public static <T> boolean listEqualsNoOrder(List<Grade> l1, List<Grade> l2) {
         final Set<Grade> s1 = new HashSet<>(l1);
         final Set<Grade> s2 = new HashSet<>(l2);
         return s1.equals(s2);
@@ -58,15 +58,15 @@ class Students {
      * @param letter
      * @return ArrayList<Student>
      */
-    public ArrayList<Student> removeStudentsWithSurnameEndedWith(String letter) {
-        if (letter.length() != 1) {
+    public ArrayList<Student> getStudentsWithSurnameNotEndedWith(Character letter) { //Character = 1 letter
+        if (letter == null) {
             throw new IllegalArgumentException("Only one letter allowed.");
         }
         //TODO: use streams instead
         ListIterator<Student> iter = students.listIterator();
         while (iter.hasNext()) {
             Student current = iter.next();
-            if (current.getSurname().endsWith(letter.toUpperCase()) || current.getSurname().endsWith(letter.toLowerCase())) {
+            if (current.getSurname().toLowerCase().endsWith(letter.toString().toLowerCase())) {
                 iter.remove();
             }
         }

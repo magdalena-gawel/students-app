@@ -3,11 +3,16 @@ package pl.students.app;
 import junit.framework.TestCase;
 
 import java.util.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
 
 public class StudentTest extends TestCase {
 
-    protected Student jakub;
-    protected Date date_9Jan, date_10Jan;
+    /**
+     * TODO: change date to LocalDateTime
+     */
+    private Student jakub;
+    private Date date_9Jan, date_10Jan;
 
     protected void setUp() {
         Calendar cal = Calendar.getInstance();
@@ -18,22 +23,21 @@ public class StudentTest extends TestCase {
 
         jakub = new Student("Jakub", "Tokarczyk");
         jakub.setGrades(
-                new ArrayList<Grade>(
+                new ArrayList<>(
                         Arrays.asList(new Grade(4.0, date_9Jan), new Grade(5.0, date_10Jan))
                 )
         );
     }
 
-    /**
-     * To nie jest test, ale chcialam na szybko przetestowac mutability.
-     * Gdybym chciala tu wrzucic asercje, musialabym sklonowac/skopiowac wartosc sprzed operacji i porownac ja z data po operacji, prawda?
-     * Probowalam i nie udalo mi sie, zawsze obie porownywane wartosci sa identyczne
-     */
     public void testMutableGradeDate() {
-        System.out.println("========= Mutable grade date: =========");
-        System.out.println(jakub.getGrades());
+        ArrayList<Grade> before = new ArrayList<Grade>();
+        for(Grade temp: jakub.getGrades()){
+            Grade newgrade = new Grade(temp.getValue(), new Date(temp.getAnnounced().getTime()));
+            before.add(newgrade);
+        }
         date_9Jan.setMonth(date_9Jan.getMonth() + 1); //deprecated, ale gdy uzywam Calendar, nie widac problemu z mutability
-        System.out.println(jakub.getGrades());
+        List after = jakub.getGrades();
+        assertThat(before, not(after));
     }
 
     /**

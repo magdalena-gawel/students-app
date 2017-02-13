@@ -9,7 +9,7 @@ public final class ImmutableStudent {
     private String surname;
     private List<ImmutableGrade> grades;
 
-    ImmutableStudent(String name, String surname, ArrayList graades) {
+    ImmutableStudent(String name, String surname, List<ImmutableGrade> graades) {
         this.name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
         this.surname = surname.substring(0, 1).toUpperCase() + surname.substring(1).toLowerCase();
         this.grades = Collections.unmodifiableList(graades);
