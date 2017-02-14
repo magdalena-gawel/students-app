@@ -12,10 +12,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/app/StudentsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" afterPath="$PROJECT_DIR$/target/test-classes/pl/students/immutable/ImmutableStudentTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/app/Students.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java" afterPath="$PROJECT_DIR$/src/main/java/pl/students/immutable/Students.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" afterPath="$PROJECT_DIR$/src/test/java/pl/students/app/StudentsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentIncorrectEqualsAndHashTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentIncorrectEqualsAndHashTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentsTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.students.app.StudentsTest.xml" />
