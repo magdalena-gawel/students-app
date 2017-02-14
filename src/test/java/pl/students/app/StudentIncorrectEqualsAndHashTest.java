@@ -2,7 +2,8 @@ package pl.students.app;
 
 import junit.framework.TestCase;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class StudentIncorrectEqualsAndHashTest extends TestCase {
 
