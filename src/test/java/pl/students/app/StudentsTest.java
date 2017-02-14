@@ -1,15 +1,13 @@
 package pl.students.app;
 
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class StudentsTest {
     protected Students all;
@@ -78,6 +76,18 @@ public class StudentsTest {
         expected.add(adam);
         expected.add(jakub);
         expected.add(agnieszka);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testGradeMap() {
+        Map<Double, Student> expected = new HashMap<Double, Student>();
+        expected.put(adam.calculateAverageGrade(), adam);
+        expected.put(agnieszka.calculateAverageGrade(), agnieszka);
+        expected.put(jakub.calculateAverageGrade(), jakub);
+
+        Map result = all.getGradeMap();
 
         assertEquals(expected, result);
     }

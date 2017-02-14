@@ -1,6 +1,7 @@
 package pl.students.app;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -76,7 +77,6 @@ class Students {
                 .filter(t -> !t.getSurname().toLowerCase().endsWith(letter.toString().toLowerCase()))
                 .collect(toList());
 
-//        //TODO: use streams instead
 //        ListIterator<Student> iter = students.listIterator();
 //        while (iter.hasNext()) {
 //            Student current = iter.next();
@@ -85,6 +85,13 @@ class Students {
 //            }
 //        }
 //        return students;
+    }
+
+    public Map<Double, Student> getGradeMap() {
+        Map<Double, Student> map = students.stream().collect(
+                Collectors.toMap(s -> s.calculateAverageGrade(), s -> s));
+        return map;
+
     }
 
 }

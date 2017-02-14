@@ -1,8 +1,10 @@
 package pl.students.immutable;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.ListIterator;
+import pl.students.app.Student;
+
+import java.util.*;
+
+import static java.util.stream.Collectors.toList;
 
 class Students {
 
@@ -20,14 +22,16 @@ class Students {
     /**
      * Sort list of students by average grade, ascending
      *
-     * @return ArrayList<ImmutableStudent>
+     * @return List<ImmutableStudent>
      */
-    public ArrayList<ImmutableStudent> sortByGrade() {
-        /**
-         * TODO: use stream
-         */
-        Collections.sort(students, (a, b) -> a.calculateAverageGrade() < b.calculateAverageGrade() ? -1 : a.calculateAverageGrade() == b.calculateAverageGrade() ? 0 : 1);
-        return students;
+    public List<ImmutableStudent> sortByGrade() {
+        Comparator<ImmutableStudent> byGrade = (e1, e2) -> Double.compare(e1.calculateAverageGrade(), e2.calculateAverageGrade());
+        return students.stream()
+                .sorted(byGrade)
+                .collect(toList());
+
+//        Collections.sort(students, (a, b) -> a.calculateAverageGrade() < b.calculateAverageGrade() ? -1 : a.calculateAverageGrade() == b.calculateAverageGrade() ? 0 : 1);
+//        return students;
     }
 
     /**
