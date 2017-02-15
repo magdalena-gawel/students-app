@@ -1,16 +1,16 @@
 package pl.students.app;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class StudentListBox<T extends Student> {
 
-    private ArrayList<T> content;
+    private List<T> content;
 
-    public StudentListBox(ArrayList<T> content) {
+    public StudentListBox(List<T> content) {
         this.content = content;
     }
 
-    public ArrayList<T> whatsInTheBox() {
+    public List<T> whatsInTheBox() {
         return content;
     }
 }
