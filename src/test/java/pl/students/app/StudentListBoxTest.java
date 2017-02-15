@@ -12,8 +12,7 @@ public class StudentListBoxTest {
     @Test
     public void testStudentSuper() {
         Student student = new Student("Jakub", "Tokarczyk");
-        //warning
-        List<Student> list = new ArrayList();
+        List<Student> list = new ArrayList<>();
         list.add(student);
         //wont work
         //StudentListBox<Student> filledBox = new StudentListBox<>(new ArrayList<Double>()); //question: why does it work? how to restrict type?
