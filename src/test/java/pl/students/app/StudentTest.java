@@ -14,7 +14,8 @@ public class StudentTest extends TestCase {
     private Student jakub;
     private LocalDateTime date_9Jan, date_10Jan;
 
-    protected void setUp() {
+    protected void setUp() throws Exception {
+        super.setUp();
         date_9Jan = LocalDateTime.of(2017, Month.JANUARY, 9, 10, 0, 0);
         date_10Jan = LocalDateTime.of(2017, Month.JANUARY, 10, 10, 0, 0);
 

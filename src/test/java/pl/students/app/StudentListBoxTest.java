@@ -15,8 +15,8 @@ public class StudentListBoxTest {
         List<Student> list = new ArrayList<>();
         list.add(student);
         //wont work
-        //StudentListBox<Student> filledBox = new StudentListBox<>(new ArrayList<Double>()); //question: why does it work? how to restrict type?
-        StudentListBox<Student> filledBox = new StudentListBox<>(list); //question: why does it work? how to restrict type?
+        //StudentListBox<Student> filledBox = new StudentListBox<>(new ArrayList<Double>());
+        StudentListBox<Student> filledBox = new StudentListBox<>(list);
         assertEquals(list, filledBox.whatsInTheBox());
     }
 

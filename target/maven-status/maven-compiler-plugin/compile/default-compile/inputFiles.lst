@@ -1,8 +1,13 @@
-/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/ImmutableStudent.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/Box.java
 /Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/Students.java
 /Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/Grade.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/Students.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentBox.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/ImmutableGrade.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentGroupB.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentListBox.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/ImmutableStudent.java
 /Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/Student.java
 /Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentIncorrectEquals.java
 /Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentIncorrectEqualsAndHash.java
-/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/Students.java
-/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/immutable/ImmutableGrade.java
+/Users/magdalena.gawel/Documents/java_apps/students-app/src/main/java/pl/students/app/StudentGroupA.java
